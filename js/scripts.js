@@ -8,13 +8,16 @@ function beepBoop(n) { //input a number
   console.log(array);
 
   const array2 = array.map(function(element)  {
-  if (element === 1)  {
-    return "Beep!";
-  } else if (element === 2)  {
-    return "Boop!";
-  } else  {
-    return element;
-  }
+    let str = element.toString();
+    if (str.includes('1'))  {
+      return "Beep!";
+    } else if (element === 2)  {
+      return "Boop!";
+    } else if (element ===3)  {
+      return "Won't you be my neighbor?";
+    }  else  {
+      return element;
+    }
   });
   console.log(array2);
 }

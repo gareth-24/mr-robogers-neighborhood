@@ -21,4 +21,9 @@ Code:
 beepBoop(5);
 Expected output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5];
 
+Test: "It should replace every element that contains the digit 1 with the phrase 'Beep!'."
+Code:
+beepBoop(11);
+Expected output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!"];
+
 ```
