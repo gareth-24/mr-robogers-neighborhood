@@ -1,4 +1,12 @@
 ```
+Describe: isPositiveInt()
+
+Test: "It should return true if the input is a positive number."
+Code: 
+isPositiveInt(4);
+Expected Output: true;
+
+
 Describe: beepBoop()
 
 Test: "It should return an array of numbers from 0 to the user's inputted number."
