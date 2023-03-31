@@ -11,6 +11,12 @@ Code:
 isPositiveInt(-4);
 Expected Output: false;
 
+Test: "It should return false if the input is 0 or not a number."
+Code: 
+isPositiveInt("hello");
+isPositiveInt(0);
+Expected Output: false;
+
 
 Describe: beepBoop()
 

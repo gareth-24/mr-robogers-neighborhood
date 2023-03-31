@@ -9,8 +9,10 @@ function isPositiveInt(inputStr)  {
   } else if (Math.sign(check) === -1) {
     console.log("false: negative number");
     return false;
-  }
-  else {
+  } else if (Math.sign(check) === 0) {
+    console.log("false: 0")
+    return false;
+  } else {
     return false;
   }
 }
