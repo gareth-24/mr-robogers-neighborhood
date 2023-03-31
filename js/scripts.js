@@ -6,6 +6,16 @@ function beepBoop(n) { //input a number
     array.push(i);
   }
   console.log(array);
+  
+  const array2 = array.map(function(element)  {
+  if (element === 1)  {
+    return "Beep!";
+  }
+  else  {
+    return element;
+  }
+  });
+  console.log(array2);
 }
 
 //UI Logic
