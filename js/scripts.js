@@ -24,7 +24,7 @@ function beepBoop(n) { //input a number
   }
   console.log(array);
 
-  const array2 = array.map(function(element)  {
+  const resultArray = array.map(function(element)  {
     let str = element.toString();
     if (str.includes('3'))  {
       return "Won't you be my neighbor?";
@@ -36,11 +36,15 @@ function beepBoop(n) { //input a number
       return element;
     }
   });
-  console.log(array2);
-  textOutput(array2);
+  console.log(resultArray);
+  textOutput(resultArray);
 }
 
 //UI Logic
+function hideResults() {
+  document.getElementById("results").setAttribute("class", "hidden");
+}
+
 function textOutput(ar) {
   let text = ar.join(', ').toString();
   let output = document.getElementById("robot-says");
@@ -49,14 +53,13 @@ function textOutput(ar) {
 
 function handleFormSubmission(event) {
   event.preventDefault();
+  hideResults();
+  const results = document.getElementById("results");
+  results.removeAttribute("class");
   const userInput = document.getElementById("input-num").value;
   const userNum = parseInt(userInput);
   console.log(userNum);
   beepBoop(userNum);
-  // const textOutput = array2;
-  // const textOutput = beepBoop(userNum);
-  // console.log(textOutput);
-  // document.getElementById("robot-says").innerText = textOutput;
 }
 
 window.addEventListener("load", function() {
