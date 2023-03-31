@@ -11,4 +11,9 @@ Code:
 beepBoop(5);
 Expected Output: [0, "Beep!", 2, 3, 4, 5];
 
+Test: "It should replace each 2 with the phrase 'Boop!'."
+Code:
+beepBoop(5);
+Expected output: [0, "Beep!", "Boop!", 3, 4, 5];
+
 ```
