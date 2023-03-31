@@ -2,26 +2,27 @@
 <html lang="en-US">
 <head>
   <title>Mr. Roboger's Neighborhood</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/scripts.js"></script>
 </head>
 <body>
   <div class="container">
     <h2>Mr. Roboger's Neighborhood</h2>
-    <form id="user-input">
-      <label for="input-num">Enter a number:</label><br>
+    <form id="user-input" class = "card">
+      <label for="input-num">Enter a number below:</label><br>
       <input type="number" id="input-num" name="input-num" required>
       <br>
       <button type="submit" class="btn btn-success">Submit</button>
     </form>
-    <br>
-  <div id = "results" class = "hidden">
-    <label>Mr. Roboger says:</label>
-    <p id="robot-says"></p>
-  </div>
-  <div id = "error-message" class="hidden">
-    <p>Error: please enter a positive number</p>
-  </div>
+    <div id = "error-message" class="hidden">
+      <p>Error: please enter a positive number.</p>
+    </div>
+    <div id = "results" class = "hidden">
+      <h3>Hello, friend!</h3>
+      <p id="robot-says"></p>
+      <img src="img/robot.jpg" alt="A grey robot smiling.">
+    </div>
   </div>
 </body>
 </html>

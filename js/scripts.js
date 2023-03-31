@@ -59,7 +59,6 @@ function textOutput(array) {
 function handleFormSubmission(event) {
   event.preventDefault();
   hideResults();
-
   const userNum = parseInt(document.getElementById("input-num").value);
   console.log(userNum);
   beepBoop(userNum);
