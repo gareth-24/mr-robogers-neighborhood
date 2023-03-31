@@ -26,4 +26,9 @@ Code:
 beepBoop(11);
 Expected output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!"];
 
+Test: "It should replace each and every element that contains the digit 2 with the phrase 'Boop!' and the digit 3 with the phrase 'Won't you be my neighbor?' with the hierarchy of 3>2>1."
+Code:
+beepBoop(14);
+Expected output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?", "Beep"];
+
 ```
