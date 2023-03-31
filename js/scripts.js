@@ -37,7 +37,34 @@ function beepBoop(n) { //input a number
     }
   });
   console.log(array2);
+  textOutput(array2);
 }
 
 //UI Logic
+function textOutput(ar) {
+  let text = ar.toString();
+  let output = document.getElementById("robot-says");
+  ar = output.append(text);
+  // const p = document.createElement("p");
+  // p.append(output);
+  // p.append(text);
+
+}
+
+
+function handleFormSubmission(event) {
+  event.preventDefault();
+  const userInput = document.getElementById("input-num").value;
+  const userNum = parseInt(userInput);
+  console.log(userNum);
+  beepBoop(userNum);
+  // const textOutput = array2;
+  // const textOutput = beepBoop(userNum);
+  // console.log(textOutput);
+  // document.getElementById("robot-says").innerText = textOutput;
+}
+
+window.addEventListener("load", function() {
+  document.querySelector("form").addEventListener("submit", handleFormSubmission);
+});
 
