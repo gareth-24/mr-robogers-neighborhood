@@ -6,6 +6,11 @@ Code:
 isPositiveInt(4);
 Expected Output: true;
 
+Test: "It should return false if the input is a negative number."
+Code: 
+isPositiveInt(-4);
+Expected Output: false;
+
 
 Describe: beepBoop()
 

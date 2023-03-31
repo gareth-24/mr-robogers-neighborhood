@@ -6,7 +6,11 @@ function isPositiveInt(inputStr)  {
   if (Math.sign(check) === 1) {
     console.log("true: positive number");
     return true;
-  } else {
+  } else if (Math.sign(check) === -1) {
+    console.log("false: negative number");
+    return false;
+  }
+  else {
     return false;
   }
 }
