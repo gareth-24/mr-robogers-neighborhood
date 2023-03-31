@@ -13,7 +13,7 @@ function isPositiveInt(inputStr)  {
   }
 }
 
-function beepBoop(n) { //input a number
+function beepBoop(n) {
   isPositiveInt(n);
   let array = [];
   for (i = 0; i <= n; i++)  {
@@ -34,7 +34,7 @@ function beepBoop(n) { //input a number
   textOutput(resultArray);
 }
 
-//UI Logic
+//User Interface Logic
 
 function hideResults() {
   document.getElementById("results").setAttribute("class", "hidden");

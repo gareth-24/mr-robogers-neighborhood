@@ -1,3 +1,30 @@
+# _Mr. Roboger's Neighborhood_
+
+#### By _**Gareth Grindeland**_
+
+#### _A student web application built with JavaScript, HTML, and CSS._
+
+## Technologies Used
+
+* Git
+* HTML
+* CSS
+* JavaScript
+* Bootstrap version 5.2.3
+* Dillinger online markdown editor
+
+## Description
+
+_This is a student project built from scratch using JavaScript, HTML, and CSS in order to demonstrate an understanding of arrays, looping, and test-driven development. On the webpage, the user can input a number which will generate an array and replace all the elements containing the digits 1, 2, or 3 with some robot jargon. If the user attempts to enter a decimal or a negative number, they will be prompted to enter a positive number. Each time the form is submitted, the results will update. This was submitted as an independent coding review project for week 3 of the full-time Epicodus C# and React course._
+
+## Setup/Installation Requirements
+
+* _Clone this repository to your desktop._
+* _Navigate to the top level of the directory._
+* _Open index.html in your browser._
+* _Enter a positive whole number into the input field and click "Submit."_
+
+## Tests
 ```
 Describe: isPositiveInt()
 
@@ -49,5 +76,14 @@ Test: "It should replace each and every element that contains the digit 2 with t
 Code:
 beepBoop(14);
 Expected output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?", "Beep"];
-
 ```
+
+## Known Bugs
+
+* _No known bugs_
+
+## License
+
+_MIT_
+_Copyright (c) 2023 Gareth Grindeland_
+
