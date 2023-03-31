@@ -41,14 +41,14 @@ function beepBoop(n) { //input a number
 }
 
 //UI Logic
+
 function hideResults() {
   document.getElementById("results").setAttribute("class", "hidden");
 }
 
-function textOutput(ar) {
-  let text = ar.join(', ').toString();
-  let output = document.getElementById("robot-says");
-  ar = output.append(text);
+function textOutput(array) {
+  let outputText = array.join(', ').toString();
+  document.getElementById("robot-says").innerText = outputText;
 }
 
 function handleFormSubmission(event) {
