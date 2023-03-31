@@ -2,7 +2,6 @@
 
 function isPositiveInt(inputStr)  {
   const check = parseInt(inputStr);
-  console.log(check);
   if (Math.sign(check) === 1) {
     return true;
   } else if (Math.sign(check) === 0) {
@@ -20,8 +19,6 @@ function beepBoop(n) { //input a number
   for (i = 0; i <= n; i++)  {
     array.push(i);
   }
-  console.log(array);
-
   const resultArray = array.map(function(element)  {
     let str = element.toString();
     if (str.includes('3'))  {
@@ -34,7 +31,6 @@ function beepBoop(n) { //input a number
       return element;
     }
   });
-  console.log(resultArray);
   textOutput(resultArray);
 }
 
@@ -50,7 +46,7 @@ function errorMessage() {
 }
 
 function textOutput(array) {
-  let outputText = array.join(', ').toString();
+  const outputText = array.join(', ').toString();
   const results = document.getElementById("results");
   document.getElementById("robot-says").innerText = outputText;
   results.removeAttribute("class");
@@ -60,7 +56,6 @@ function handleFormSubmission(event) {
   event.preventDefault();
   hideResults();
   const userNum = parseInt(document.getElementById("input-num").value);
-  console.log(userNum);
   beepBoop(userNum);
 }
 
