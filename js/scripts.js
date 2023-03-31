@@ -4,20 +4,18 @@ function isPositiveInt(inputStr)  {
   const check = parseInt(inputStr);
   console.log(check);
   if (Math.sign(check) === 1) {
-    console.log("true: positive number");
     return true;
-  } else if (Math.sign(check) === -1) {
-    console.log("false: negative number");
-    return false;
   } else if (Math.sign(check) === 0) {
-    console.log("false: 0")
+    errorMessage();
     return false;
   } else {
+    errorMessage();
     return false;
   }
 }
 
 function beepBoop(n) { //input a number
+  isPositiveInt(n);
   let array = [];
   for (i = 0; i <= n; i++)  {
     array.push(i);
@@ -44,20 +42,25 @@ function beepBoop(n) { //input a number
 
 function hideResults() {
   document.getElementById("results").setAttribute("class", "hidden");
+  document.getElementById("error-message").setAttribute("class", "hidden");
+}
+
+function errorMessage() {
+  document.getElementById("error-message").removeAttribute("class");
 }
 
 function textOutput(array) {
   let outputText = array.join(', ').toString();
+  const results = document.getElementById("results");
   document.getElementById("robot-says").innerText = outputText;
+  results.removeAttribute("class");
 }
 
 function handleFormSubmission(event) {
   event.preventDefault();
   hideResults();
-  const results = document.getElementById("results");
-  results.removeAttribute("class");
-  const userInput = document.getElementById("input-num").value;
-  const userNum = parseInt(userInput);
+
+  const userNum = parseInt(document.getElementById("input-num").value);
   console.log(userNum);
   beepBoop(userNum);
 }
