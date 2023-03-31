@@ -6,12 +6,13 @@ function beepBoop(n) { //input a number
     array.push(i);
   }
   console.log(array);
-  
+
   const array2 = array.map(function(element)  {
   if (element === 1)  {
     return "Beep!";
-  }
-  else  {
+  } else if (element === 2)  {
+    return "Boop!";
+  } else  {
     return element;
   }
   });
