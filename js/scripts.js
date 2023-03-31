@@ -1,5 +1,16 @@
 //Business Logic
 
+function isPositiveInt(inputStr)  {
+  const check = parseInt(inputStr);
+  console.log(check);
+  if (Math.sign(check) === 1) {
+    console.log("true: positive number");
+    return true;
+  } else {
+    return false;
+  }
+}
+
 function beepBoop(n) { //input a number
   let array = [];
   for (i = 0; i <= n; i++)  {
