@@ -42,15 +42,10 @@ function beepBoop(n) { //input a number
 
 //UI Logic
 function textOutput(ar) {
-  let text = ar.toString();
+  let text = ar.join(', ').toString();
   let output = document.getElementById("robot-says");
   ar = output.append(text);
-  // const p = document.createElement("p");
-  // p.append(output);
-  // p.append(text);
-
 }
-
 
 function handleFormSubmission(event) {
   event.preventDefault();
