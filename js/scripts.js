@@ -16,7 +16,7 @@ function isPositiveInt(inputStr)  {
 function beepBoop(n) {
   isPositiveInt(n);
   let array = [];
-  for (i = 0; i <= n; i++)  {
+  for (let i = 0; i <= n; i++)  {
     array.push(i);
   }
   const resultArray = array.map(function(element)  {
